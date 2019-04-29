@@ -1,0 +1,51 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+
+body {
+  background-color: #333;
+}
+.logo h1 {
+font: Arial;
+font-size: 50px;
+color: white;
+background-color: #DC143C;
+text-align: center;
+}
+
+.logo h1 {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.menu {
+  float: left;
+  margin: 80px 50px;
+}
+.menu li a {
+  padding: 0px;
+  color: #f4e9d3;
+  font-size: 25px;
+}
+
+.menu p{
+  color: #CD143C;
+  font-size: 50px;
+  text-align: center;
+}
+.menu p1{
+  color: white;
+  font-size: 30px;
+}
+.rodape{
+  clear: both;
+  background-color: black;
+  text-align: center;
+
+}
+
+.rodape p{
+  color: white;

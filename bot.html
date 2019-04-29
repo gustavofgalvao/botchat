@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TeachHelp</title>
+    <link rel="stylesheet" type="text/css" href="css/bot.css">
+  </head>
+  <body>
+    <div class="logo">
+      <h1>TeachHelp</h1>
+    </div>
+    <div class="menu-trigger" id="menu-trigger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="menu-hidde" id="menu-hidde">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>Ajuda</li>
+      </ul>
+    </nav>
+    <script type="text/javascript">
+    var veri = 1;
+    var trigger = document.getElementById('menu-trigger').addEventListener("click",function(){
+      var menuTrigger = document.getElementById('menu-trigger');
+      var menu = document.getElementById('menu-hidde');
+      if (veri == 1) {
+        menu.style.left = "0px";
+        menuTrigger.style.left = "200px";
+         veri = 0;
+      }else{
+        menu.style.left = "-100%";
+        menuTrigger.style.left = "10px";
+         veri = 1;
+      }
+    })
+    </script>
+    <div class="bot">
+      <img src="img\chatbot-07-512.png" align="middle">
+    </div>
+    <div class="barra">
+      <form class="ask" name="Pergunta">
+        <div class="barrinha">
+          <input id="bis" type="text" name="question" placeholder="O que deseja perguntar?">
+        </div>
+        <div class="problem">
+          <h2>Tendo problemas na pesquisa? Clique Aqui!</h2>
+        </div>
+      </form>
+    </div>
+    <div class="rodape">
+      <p> 2019 © Todos os direitos reservados. Desenvolvido por TriTechno </p>
+    </div>
+  </body>
+</html>
