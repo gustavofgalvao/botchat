@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TeachHelp</title>
+    <link rel="stylesheet" type="text/css" href="css/portugues.css">
+  </head>
+  <body>
+    <div class="logo">
+      <h1>TeachHelp</h1>
+    </div>
+    <div class="menu-trigger" id="menu-trigger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="menu-hidde" id="menu-hidde">
+      <ul>
+        <a href="index.html">Assistente</a>
+        <a href="menu.html">Menu</a>
+        <a href="conta.html">Perfil</a>
+        <a href="contato.html">Contato</a>
+      </ul>
+    </nav>
+    <script type="text/javascript">
+    var veri = 1;
+    var trigger = document.getElementById('menu-trigger').addEventListener("click",function(){
+      var menuTrigger = document.getElementById('menu-trigger');
+      var menu = document.getElementById('menu-hidde');
+      if (veri == 1) {
+        menu.style.left = "0px";
+        menuTrigger.style.left = "200px";
+         veri = 0;
+      }else{
+        menu.style.left = "-100%";
+        menuTrigger.style.left = "10px";
+         veri = 1;
+      }
+    })
+    </script>
+    <h2><u>Português</u></h2>
+    <div class="capitulos">
+      <li><a href="error.html">&#10060;<u>Cap 1 - Comunicação Empresarial</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 2 - Técnicas de Leitura e Interpretação de Textos</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 3 - A coesão textual e a construção do sentido</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 4 - Coerência - A unidade do texto</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 5 - Storytelling</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 6 - Conceito de Startup</u></a></li>
+      <li><a href="cap7conteudo.html">&#9989;<u>Cap 7 - Modelo de Negócios - Canvas</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 8 - O moderno texto empresarial </u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 9 - Características do moderno texto empresarial</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 10 - Erros empresariais comuns</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 11 - Técnicas de Apresentação</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 12 - Pitch</u></a></li>
+      <li><a href="error.html">&#10060;<u>Cap 13 - Gramática normativa aplicada à leitura e produção textual</u></a></li>
+
+    </div>
+
+    <div class="voltar">
+    <input type='button' value='Voltar' onclick='history.go(-1)'/>
+    </div>
+
+    <div class="direito">
+      <p>2019 © Todos os direitos reservados. Desenvolvido por TriTechno</p>
+    </div>
+  </body>
+</html>

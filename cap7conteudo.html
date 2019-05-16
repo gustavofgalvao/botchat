@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TeachHelp</title>
+    <link rel="stylesheet" type="text/css" href="css/cap7conteudo.css">
+  </head>
+  <body background="fundo2.jpg">
+    <div class="logo">
+      <h1>TeachHelp</h1>
+    </div>
+    <div class="menu-trigger" id="menu-trigger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="menu-hidde" id="menu-hidde">
+      <ul>
+        <a href="index.html">Assistente</a>
+        <a href="menu.html">Menu</a>
+        <a href="portugues.html">Capítulos</a>
+        <a href="conta.html">Perfil</a>
+        <a href="contato.html">Contato</a>
+
+      </ul>
+    </nav>
+    <script type="text/javascript">
+    var veri = 1;
+    var trigger = document.getElementById('menu-trigger').addEventListener("click",function(){
+      var menuTrigger = document.getElementById('menu-trigger');
+      var menu = document.getElementById('menu-hidde');
+      if (veri == 1) {
+        menu.style.left = "0px";
+        menuTrigger.style.left = "200px";
+         veri = 0;
+      }else{
+        menu.style.left = "-100%";
+        menuTrigger.style.left = "10px";
+         veri = 1;
+      }
+    })
+    </script>
+    <div class="corpo">
+		    <div class="conteudo">
+			<h2><u>MODELO DE NEGÓCIOS - CANVAS</u></h2>
+
+			<h3><u>Detalhes</u></h3>
+
+			<p>Para perceber o impacto de um sistema de informações no modelo de negócios de uma organização faz-se necessário compreender o que é um modelo de negócios. O Business Model Generation (BMG) é uma metodologia para esboçar um plano de negócios relativo a uma ideia de negócios, para validar se a ideia do empreendedor é realmente uma boa ideia de negócios. É uma simplificação do modelo de negócios tradicional. O BMG é um quadro, ou melhor, uma tela - canvas. Os autores Alex Osterwalder e Yves Pigneur (2011) propõem a análise de nove fatores de sucesso, ou nove “blocos de construção”, para que o empreendedor e sua equipe validem sua ideia. Ou seja, o modelo de negócios descreve a lógica de criação, entrega e captura de valor por parte de uma organização. Esse formato, que surgiu com um simples gráfico em power point, se tornou uma bela tela separada em nove blocos, de visualização fácil, conhecido como Business Model – Canvas. </p> <br>
+
+			<img src="img/representacao.jpg"><br>
+
+			<p>A descrição do negócio deve fazer parte da cultura organizacional, sendo um documento vivo que constantemente deve ser checado e atualizado. Seus nove blocos são: os segmentos de clientes, a proposta de valor, os canais, o relacionamento com os clientes, as fontes de receita, os recursos principais, as atividades-chave, as parcerias principais e a estrutura de custo. É importante ressaltar que, pequenos ajustes em um ou mais elementos, podem fazer total diferença na competitividade da organização.</p>
+
+			<h3><u>BMG e o plano de negócios convencional</u></h3>
+
+			<p> O BMG é uma metodologia simplificada para validação de ideias de negócios. Funciona como uma primeira reflexão para que o empreendedor valide sua ideia. Entretanto, quando há convicção que a ideia é boa, e é tomada a decisão de que ela “sairá do papel” para se tornar uma empresa, um produto ou serviço, recomenda-se que o empreendedor elabore um plano de negócios mais detalhado, para minimizar os riscos do empreendimento.  </p>
+		    </div>
+		</div>
+
+    <div class="voltar">
+
+    <input type='button' value='Voltar' onclick='history.go(-1)'/>
+
+    </div>
+
+    <div class="direito">
+      <p>2019 © Todos os direitos reservados. Desenvolvido por TriTechno</p>
+    </div>
+  </body>
+</html>
